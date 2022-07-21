@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "States App";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Welcome to the ASP.NET MVC Developer Test</h1>
+    <br />
+    <h2>Introduction</h2>
+    <p>
+        This developer test is designed to test your expertise writing modern web applications. There are many ways to solve the problems presented in this test, so there's no single right answer.
+    </p>
+    <p>
+        You are to work on this assignment on your own computer. There is no time limit for this assignment, but it is not intended to take long to finish. You are welcome to use any and all resources on the web to create your application, but you must list any software you utilized, and you should not include any code you did not write in your source files.
+    </p>
+    <p>
+        This test should be treated like a small product that you would deliver to a customer. Therefore you should consider easy of use, features, and the
+        overall design of the application when building your application.
+    </p>
+    <p>
+        If you have any questions, please feel free to contact us and ask.
+    <p />
+
+    <h2>Installation</h2>
+    
+    <p>Please fork the repository to create your own version. Then proceed to use that to complete your work.</p>
+
+    <ul style="margin:10px; margin-bottom:20px;">
+        <li style="margin:10px;">You must have Microsoft Visual Studio installed on your computer. Visual Studio Community Edition is available at https://visualstudio.microsoft.com/vs/community/, and Visual Studio Code can be downloaded from https://code.visualstudio.com/ </li>
+        <li style="margin:10px;">Rebuild the solution to install any missing packages</li>
+        <li style="margin:10px;">Pointing a web server at https://localhost:7228/ should result in the instructions being displayed.</li>
+    </ul>
+
+
+    <h2>Your Data Model</h2>
+
+    A list of state objects containing:<br>
+    <ul>
+        <li>Name
+        <li>Abbreviation
+        <li>Capital
+        <li>MostPopulousCity
+        <li>Population
+        <li>SquareMiles
+        <li>TimeZone1
+        <li>TimeZone2
+        <li>Dst
+        <li>IsDst
+    </ul>
+
+    <p>
+        The states are preloaded in the Constructor of the Home Controller. See the <i>_states</i> field.
+    </p>
+
+    <h2>Assignment</h2>
+    <p>Update this application to provide the following functionality:</p>
+
+    <ul>
+        <li style="padding-bottom:20px;">
+            The user should be able to browse through the list of all 50 states
+            <ul style="margin:10px;">
+                <li style="margin:10px;">Allow Paging of the displayed data. The user should have a choice of displaying 5 or 10 states per page.</li>
+                <li style="margin:10px;">Allow Sorting of the displayed data. The user should be able to sort by the State Name or Population.</li>
+                <li style="margin:10px;">Allow Searching for a specific state. The search algorithm should look at the State Name and the Capital of the State, at a minimum.</li>
+            </ul>
+        </li>
+        <li style="padding-bottom:20px;">
+            The user should be able to display the details of any single state
+            <ul style="margin:10px;">
+                <li style="margin:10px;">Allow the user to navigate back to the states list, taking into consideration the data page the user was viewing.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Please update the README file in your project and answer the following questions.</p>
+
+    <br/>
+
+    <h3>Questions</h3>
+    <p><b>What additional libraries did you use to write your application, if any?</b></p>
+    <p><b>What influenced the design of your user interface?</b></p>
+    <p><b>What steps did you take to make your application user friendly?</b></p>
+    <p><b>What could be done to the front end or back end to make this application secure?</b></p>
+
+    <br />
+    <br />
+
+    <h3>Submitting</h3>
+    <p>
+        Submit your results to your Github repository. Then send us an email with the URL for your repository so that we can take a look.
+    </p>
+</div>
