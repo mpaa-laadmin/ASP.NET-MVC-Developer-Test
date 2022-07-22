@@ -2,6 +2,17 @@
     ViewData["Title"] = "States App";
 }
 
+<style>
+    li {
+        margin:10px;
+    }
+
+    ul {
+        margin:10px; 
+        margin-bottom:20px;
+    }
+</style>
+
 <div class="text-left">
     <h1 class="display-4">Welcome to the ASP.NET MVC Developer Test</h1>
     <br />
@@ -24,14 +35,14 @@
     
     <p>Please fork the repository to create your own version. Then proceed to use that to complete your work.</p>
 
-    <ul style="margin:10px; margin-bottom:20px;">
-        <li style="margin:10px;">You must have Microsoft Visual Studio installed on your computer. Visual Studio Community Edition is available at https://visualstudio.microsoft.com/vs/community/, and Visual Studio Code can be downloaded from https://code.visualstudio.com/ </li>
-        <li style="margin:10px;">Rebuild the solution to install any missing packages</li>
-        <li style="margin:10px;">Pointing a web server at https://localhost:7228/ should result in the instructions being displayed.</li>
+    <ul >
+        <li>You must have Microsoft Visual Studio installed on your computer. Visual Studio Community Edition is available at https://visualstudio.microsoft.com/vs/community/, and Visual Studio Code can be downloaded from https://code.visualstudio.com/ </li>
+        <li>Rebuild the solution to install any missing packages</li>
+        <li>Pointing a web server at https://localhost:7228/ should result in the instructions being displayed.</li>
     </ul>
 
 
-    <h2>Your Data Model</h2>
+    <h2>Data Model</h2>
 
     A list of state objects containing:<br>
     <ul>
@@ -57,23 +68,27 @@
     <ul>
         <li style="padding-bottom:20px;">
             The user should be able to browse through the list of all 50 states
-            <ul style="margin:10px;">
-                <li style="margin:10px;">Allow Paging of the displayed data. The user should have a choice of displaying 5 or 10 states per page.</li>
-                <li style="margin:10px;">Allow Sorting of the displayed data. The user should be able to sort by the State Name or Population.</li>
-                <li style="margin:10px;">Allow Searching for a specific state. The search algorithm should look at the State Name and the Capital of the State, at a minimum.</li>
+            <ul>
+                <li>Allow Paging of the displayed data. The user should have a choice of displaying 5 or 10 states per page.</li>
+                <li>Allow Sorting of the displayed data. The user should be able to sort by the State Name or Population.</li>
+                <li>Allow Searching for a specific state. 
+                    <ul>
+                        <li>The search algorithm should look at the State Name and the Capital of the State, at a minimum.</li>
+                        <li>Disallow special characters in the search string.</li>                        
+                    </ul>
+                </li>
             </ul>
         </li>
         <li style="padding-bottom:20px;">
             The user should be able to display the details of any single state
-            <ul style="margin:10px;">
-                <li style="margin:10px;">Allow the user to navigate back to the states list, taking into consideration the data page the user was viewing.</li>
+            <ul>
+                <li>Allow the user to navigate back to the states list, taking into consideration the data page the user was viewing.</li>
             </ul>
         </li>
     </ul>
 
     <p>Please update the README file in your project and answer the following questions.</p>
 
-    <br/>
 
     <h3>Questions</h3>
     <p><b>What additional libraries did you use to write your application, if any?</b></p>

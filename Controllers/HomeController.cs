@@ -24,10 +24,11 @@ namespace MVC_WebApp_MPA.Controllers
             string statesFilePath = Path.Combine(contentRootPath, "wwwroot/data/usa_states.json");
             using (StreamReader sr = new StreamReader(statesFilePath))
             {
-                _states = JsonConvert.DeserializeObject<List<State>>(sr.ReadToEnd()) ?? new();
+                _states = JsonConvert.DeserializeObject<List<State>>(sr.ReadToEnd()) ?? throw new Exception("Unable to import the states");
             }
         }
 
+        [Route("States")]
         public IActionResult StatesList()
         {
             return View(_states);
